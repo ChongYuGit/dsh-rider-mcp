@@ -1,0 +1,8 @@
+node_modules/
+*.log
+*.tgz
+.DS_Store
+Thumbs.db
+
+# Runtime state written by the plugin beside the DSH profile.
+rider-mcp.sessions.json

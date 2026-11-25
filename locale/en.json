@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Rider MCP connection",
+    "description": "Connects DSH to the MCP server built into JetBrains Rider at http://127.0.0.1:64482/stream (streamable-http) and exposes Rider's MCP tools as mcp__rider__* tools. No project is pinned by default: each tool call names the open Rider project through its rootFolder argument (usually the session workspace path), so one installation serves every project. Click the badge above the message box to open a panel: pick \"per call\", one of the projects open in Rider, or type a path; each conversation owns an independent connection: the choice affects only this session, is saved per session, and survives a restart without changing other sessions. The panel's Disconnect button revokes only this session's registration and removes its tools until Connect restores them. The badge shows the live connection state (connected, connecting, reconnecting, failed, disconnected) and reports the project path this conversation last worked on (hover to read; the dot stays amber until a project is known and turns green afterwards). Requires Rider running with its built-in MCP server enabled (default port 64482); while Rider is closed the connection is unavailable. DSH's MCP client speaks streamable-http only, so Rider's SSE endpoint (/sse) is not used. Long tool calls such as builds get a 5-minute timeout. Disabling this bundle removes these tools.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,1 @@
+![DSH agent exchanging tool calls and results with the MCP server built into JetBrains Rider](preview.svg)

@@ -1,0 +1,10 @@
+- insert:
+    - id: rider-mcp
+      name: 'dsh-rider-mcp'
+      config:
+        url: 'http://127.0.0.1:64482/stream'
+        # Default only: pin one open Rider project, or leave empty to choose the
+        # project per tool call through its rootFolder argument. Each session's
+        # own choice is stored separately and overrides this default.
+        projectPath: ''
+        toolCallTimeoutMs: 300000
